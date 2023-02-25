@@ -19,7 +19,7 @@ $("#show").click(
   }
 );
 
-
+// Jquery
 //Hide and show the element
 $(function(){
     $("#hide").click(function(){
@@ -73,7 +73,7 @@ $(function(){
   console.log(typeof currentAge);
   console.log(typeof lastName);
 
-//Contatenation with using the symbol(``)
+//Concatenation  using the symbol(``)
 const myName = 'Joshua Santos';
 const currAge = ' 22 Years Old Student';
 const myLocation = 'Pampanga';
@@ -184,23 +184,85 @@ const modernFunction = (num1, num2) => {
 }
 console.log(modernFunction(7, 6));
 
+// Dark mode
+const darkMode = document.querySelector("#darkBtn");
+const lightMode = document.querySelector("#lightBtn");
+const manipulateMain = document.querySelector(".myMain");
+const hideMode = document.querySelector('lightBtn')
+
+darkMode.addEventListener("click", function(e){
+  manipulateMain.style.background = "black";
+  
+});
+
+lightMode.addEventListener("click", function(e){
+  manipulateMain.style.background = "white"
+});
 
 
+const myInformation = {
+  name:"Joshua",
+  gender:"Male",
+}
+
+const {myFirstName , myGender} = myInformation;
+console.log(myInformation);
+
+let a = 10;
+let b = 20;
+
+[a,b] = [b,a];
+
+console.log(a,b);
 
 
+const [aa, bb, ...arr] = [1, 2, 3, 4, 5, 7];
+console.log(aa, bb);
+console.log(arr);
 
 
+const stats = {
+  max: 56.78,
+  standard_deviation: 4.34,
+  median: 34.54,
+  mode: 23.87,
+  min: -0.75,
+  average: 35.85
+};
+
+// Only change code below this line
+const half = ({ max, min }) => (max + min) / 2.0;
+// Only change code above this line
+
+console.log(half);
 
 
+const person = {
+  name:'Joshua Santos',
+  gender:'Male',
+  age:22
+};
 
 
+const greeting = `Hello my name is ${person.name}! I am a ${person.gender} and ${person.age} years of age.`;
+console.log(greeting);
 
+// SImple Calculator
+// Get the input fields and the result field
+var num1 = document.getElementById("num1");
+var num2 = document.getElementById("num2");
+var result = document.getElementById("result");
 
-
-
-
-//   $(function(){
-//     $("myBtn2").click(function(){
-//         $("#name").show(1000);
-//     });
-//   });
+// Add event listeners to the buttons
+document.getElementById("add").addEventListener("click", function(){
+  result.value = Number(num1.value) + Number(num2.value);
+});
+document.getElementById("subtract").addEventListener("click", function(){
+  result.value = Number(num1.value) - Number(num2.value);
+});
+document.getElementById("multiply").addEventListener("click", function(){
+  result.value = Number(num1.value) * Number(num2.value);
+});
+document.getElementById("divide").addEventListener("click", function(){
+  result.value = Number(num1.value) / Number(num2.value);
+});

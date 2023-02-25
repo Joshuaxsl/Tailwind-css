@@ -1,60 +1,251 @@
- <!DOCTYPE html>
- <html lang="en">
- <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/dist/output.css">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/output.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <title>Document</title>
- </head>
- <body> 
-    <h1 class="text-2xl text-blue-600">Joshua SAntos</h1>
-    <h2 class="text-green-600">Hello World Joshua</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem aspernatur qui maxime quaerat enim a aperiam pariatur excepturi minima deleniti? Nisi eveniet eaque at dicta. Ab doloremque aliquam voluptates eligendi maxime pariatur veritatis laborum nemo possimus, beatae voluptate dolores iusto, enim illo ratione libero? Cupiditate, ratione eaque? Ex, perferendis obcaecati.</p>
-    <div id="section-hero">3</div>
-
-   <button onclick="myBtn()" type="button" class="px-5 py-3 bg-violet-600 rounded ml-10 text-white"><span id="spanBtn">Click me</span></button>
-    
-   <div id="section-hero" onclick="changeBgColor()" class="h-screen bg-red-500 flex justify-center items-center">
-      <h1 class="text-2xl text-white">Hello motheqweqqweqwwrfucker</h1>
-   </div>
-   
-
-   <div class="container p-56">
-      <p class="p-5 my-10 bg-green-500 text-right text-white text-5xl">0</p>
-      <div class="grid grid-cols-3 gap-4 items-center text-3xl">
-         <button onclick="1" type="button" class="p-5 bg-cyan-500 text-white rounded-full">1</button>
-         <button onclick="2" type="button" class="p-5 bg-cyan-500 text-white rounded-full">2</button>
-         <button onclick="3" type="button" class="p-5 bg-cyan-500 text-white rounded-full">3</button>
-         <button onclick="4" type="button" class="p-5 bg-cyan-500 text-white rounded-full">4</button>
-         <button onclick="5" type="button" class="p-5 bg-cyan-500 text-white rounded-full">5</button>
-         <button onclick="6" type="button" class="p-5 bg-cyan-500 text-white rounded-full">6</button>
-         <button onclick="7" type="button" class="p-5 bg-cyan-500 text-white rounded-full">7</button>
-         <button onclick="8" type="button" class="p-5 bg-cyan-500 text-white rounded-full">8</button>
-         <button onclick="9" type="button" class="p-5 bg-cyan-500 text-white rounded-full">9</button>
-         <button onclick="0" type="button" class="p-5 bg-cyan-500 text-white rounded-full">0</button>
-         <button onclick="" type="button" class="p-5 bg-red-500 text-white rounded-full">Clear</button>
-         <button onclick="" type="button" class="p-5 bg-black text-white rounded-full">=</button>
+  </head>
+  <body>
+    <main class="bg-violet-500 myMain">
+      <div class="h-screen text-right">
+        <button
+          id="darkBtn"
+          type="button"
+          class="px-5 py-2 text-white text-2xl"
+        >
+          <i class="fa-solid fa-sun"></i>
+        </button>
+        <button
+          id="lightBtn"
+          type="button"
+          class="px-5 py-2 text-white text-2xl"
+        >
+          <i class="fa-solid fa-moon"></i>
+        </button>
       </div>
-      <div class="grid grid-cols-4 my-10 gap-4 text-3xl">
-         <button type="button" class="p-5 bg-cyan-500 text-white rounded-full">/</button>
-         <button type="button" class="p-5 bg-cyan-500 text-white rounded-full">*</button>
-         <button type="button" class="p-5 bg-cyan-500 text-white rounded-full">-</button>
-         <button type="button" class="p-5 bg-cyan-500 text-white rounded-full">+</button>
-      </div>
-   </div>
-   
-   <div>
-      <p>Hello</p>
-   </div>
-   
-   <div id="name" class=" text-white text-2xl w-fit p-5 bg-black">
-      <h2>Joshua Santos</h2>
-   </div>
+      <h1 class="text-2xl text-blue-600">Joshua SAntos</h1>
+      <h2 class="text-green-600">Hello World Joshua</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+        aspernatur qui maxime quaerat enim a aperiam pariatur excepturi minima
+        deleniti? Nisi eveniet eaque at dicta. Ab doloremque aliquam voluptates
+        eligendi maxime pariatur veritatis laborum nemo possimus, beatae
+        voluptate dolores iusto, enim illo ratione libero? Cupiditate, ratione
+        eaque? Ex, perferendis obcaecati.
+      </p>
+      <div id="section-hero">3</div>
 
-   <button id="myBtn1" type="button" class="p-5 bg-slate-700 rounded m-5 text-white">Hide my name</button>
-   <button id="myBtn2" type="button" class="p-5 bg-slate-700 rounded m-5 text-white">Show my name</button>
-   <script src="/public/main.js"></script>
- </body>
- </html>
+      <button
+        onclick="myBtn()"
+        type="button"
+        class="px-5 py-3 bg-violet-600 rounded ml-10 text-white"
+      >
+        <span id="spanBtn">Click me</span>
+      </button>
+
+      <div
+        id="section-hero"
+        onclick="changeBgColor()"
+        class="h-screen bg-red-500 flex justify-center items-center"
+      >
+        <h1 class="text-2xl text-white">Hello motheqweqqweqwwrfucker</h1>
+      </div>
+
+      <div class="container p-56">
+        <p class="p-5 my-10 bg-green-500 text-right text-white text-5xl">0</p>
+        <div class="grid grid-cols-3 gap-4 items-center text-3xl">
+          <button
+            onclick="1"
+            type="button"
+            class="p-5 bg-cyan-500 text-white rounded-full"
+          >
+            1
+          </button>
+          <button
+            onclick="2"
+            type="button"
+            class="p-5 bg-cyan-500 text-white rounded-full"
+          >
+            2
+          </button>
+          <button
+            onclick="3"
+            type="button"
+            class="p-5 bg-cyan-500 text-white rounded-full"
+          >
+            3
+          </button>
+          <button
+            onclick="4"
+            type="button"
+            class="p-5 bg-cyan-500 text-white rounded-full"
+          >
+            4
+          </button>
+          <button
+            onclick="5"
+            type="button"
+            class="p-5 bg-cyan-500 text-white rounded-full"
+          >
+            5
+          </button>
+          <button
+            onclick="6"
+            type="button"
+            class="p-5 bg-cyan-500 text-white rounded-full"
+          >
+            6
+          </button>
+          <button
+            onclick="7"
+            type="button"
+            class="p-5 bg-cyan-500 text-white rounded-full"
+          >
+            7
+          </button>
+          <button
+            onclick="8"
+            type="button"
+            class="p-5 bg-cyan-500 text-white rounded-full"
+          >
+            8
+          </button>
+          <button
+            onclick="9"
+            type="button"
+            class="p-5 bg-cyan-500 text-white rounded-full"
+          >
+            9
+          </button>
+          <button
+            onclick="0"
+            type="button"
+            class="p-5 bg-cyan-500 text-white rounded-full"
+          >
+            0
+          </button>
+          <button
+            onclick=""
+            type="button"
+            class="p-5 bg-red-500 text-white rounded-full"
+          >
+            Clear
+          </button>
+          <button
+            onclick=""
+            type="button"
+            class="p-5 bg-black text-white rounded-full"
+          >
+            =
+          </button>
+        </div>
+        <div class="grid grid-cols-4 my-10 gap-4 text-3xl">
+          <button type="button" class="p-5 bg-cyan-500 text-white rounded-full">
+            /
+          </button>
+          <button type="button" class="p-5 bg-cyan-500 text-white rounded-full">
+            *
+          </button>
+          <button type="button" class="p-5 bg-cyan-500 text-white rounded-full">
+            -
+          </button>
+          <button type="button" class="p-5 bg-cyan-500 text-white rounded-full">
+            +
+          </button>
+        </div>
+      </div>
+
+      <div>
+        <p>Hello</p>
+      </div>
+
+      <div id="name" class="text-white text-2xl w-fit p-5 bg-black">
+        <h2>Joshua Santos</h2>
+      </div>
+
+      <button
+        id="myBtn1"
+        type="button"
+        class="p-5 bg-slate-700 rounded m-5 text-white"
+      >
+        Hide my name
+      </button>
+      <button
+        id="myBtn2"
+        type="button"
+        class="p-5 bg-slate-700 rounded m-5 text-white"
+      >
+        Show my name
+      </button>
+      <!-- Calculator -->
+      <input type="number" id="num1" />
+      <input type="number" id="num2" />
+      <input type="number" id="result" disabled />
+      <button id="add">Add</button>
+      <button id="subtract">Subtract</button>
+      <button id="multiply">Multiply</button>
+      <button id="divide">Divide</button>
+
+
+      <nav class="bg-gray-800">
+        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+          <div class="relative flex items-center justify-between h-16">
+            <!-- Mobile menu button -->
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <!-- Icon when menu is closed. -->
+                <!--
+                  Heroicon name: menu
+      
+                  Menu open: "hidden", Menu closed: "block"
+                -->
+                <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <!-- Icon when menu is open. -->
+                <!--
+                  Heroicon name: x
+      
+                  Menu open: "block", Menu closed: "hidden"
+                -->
+                <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+              <!-- Logo -->
+              <div class="flex-shrink-0 flex items-center">
+                <a href="/" class="text-white text-2xl font-bold">My Site</a>
+              </div>
+              <!-- Navigation links -->
+              <div class="hidden sm:block sm:ml-6">
+                <div class="flex space-x-4">
+                  <a href="#" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium">Profile</a>
+                  <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About Me</a>
+                  <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Resume</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="sm:hidden" id="mobile-menu">
+          <div class="px-2 pt-2 pb-3 space-y-1">
+            <a href="#" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium">Profile</a>
+            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About Me</a>
+           
+      
+    </main>
+    <script src="/public/main.js"></script>
+    <script
+      src="https://kit.fontawesome.com/9163d2926c.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
