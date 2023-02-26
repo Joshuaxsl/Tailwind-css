@@ -1,13 +1,28 @@
-function myFunction(a, b){
-    sum = a +b ;
-    return sum;
+// export default function myFunction(a, b){
+//      return a+b;
+// }
+// exporting
+export const myValue = 42;
+export function myFunction() {
+  console.log('Hello, world!');
 }
- 
+
+
+export function multiply(num1,num2){
+  return num1 * num2 ; 
+}
+
 document.getElementById('section-hero').innerHTML = myFunction(3, 10);
 
 function myBtn(){
     document.getElementById('spanBtn').innerHTML = "Joshua Pogi"
 }
+
+export const myFriends = {
+  name:'Antonio',
+  age:21,
+  location:"Pampanga"
+};
 
 
 $("p").hide()
@@ -265,4 +280,139 @@ document.getElementById("multiply").addEventListener("click", function(){
 });
 document.getElementById("divide").addEventListener("click", function(){
   result.value = Number(num1.value) / Number(num2.value);
+});
+
+
+
+const createPerson = (name, age, gender) => {
+  // Only change code below this line
+  return {
+    name,
+    age,
+    gender
+  };
+  // Only change code above this line
+};
+
+console.log(createPerson("Joshua Santos",22,"Male"));
+
+
+// Only change code below this line
+class Vegetable{
+  constructor(name,price){
+    this.name = name;
+    this.price = price;
+  }
+  
+}
+// Only change code above this line
+const prices = new Vegetable("Celery",12);
+console.log(prices.name);
+
+const Wtf = new Vegetable('carrot');
+console.log(Wtf.name); // Should display 'carrot'
+
+
+class Book {
+  constructor(author) {
+    this._author = author;
+  }
+  // getter
+  get writer() {
+    return this._author;
+  }
+  // setter
+  set writer(updatedAuthor) {
+    this._author = updatedAuthor;
+  }
+}
+const novel = new Book('anonymous');
+console.log(novel.writer);
+novel.writer = 'newAuthor';
+console.log(novel.writer);
+
+
+// Only change code below this line
+class Thermostat {
+  constructor(fahrenheit) {
+    this._fahrenheit = fahrenheit;
+  }
+  
+  get temperature() {
+    return (5 / 9) * (this._fahrenheit - 32);
+  }
+  
+  set temperature(celsius) {
+    this._fahrenheit = (celsius * 9.0) / 5 + 32;
+  }
+}
+// Only change code above this line
+
+const thermos = new Thermostat(76); // Setting in Fahrenheit scale
+let temp = thermos.temperature; // 24.44 in Celsius
+thermos.temperature = 26;
+temp = thermos.temperature; // 26 in Celsius
+
+
+// Constructor, get , set
+// Centimeter to meter 
+class JoshuaSantos{
+  constructor(height){
+    this._height = height;
+  }
+
+  get centimeter(){
+    return this._height
+  }
+  set centimeter(meter){
+    this._height = (meter  / 100);
+  }
+}
+
+const myHeight = new JoshuaSantos(177);
+
+let mySelf = myHeight.centimeter;
+console.log(mySelf);
+
+myHeight.centimeter = 180;
+mySelf = myHeight.centimeter;
+console.log(mySelf);
+
+
+
+class JoshuaSantosWeight{
+  constructor(weight){
+    this._weight = weight; // weight in kilogram
+  }
+
+  get pounds(){   //Just return the weight specified in the function
+    return this._weight;
+  }
+  set pounds(pound){ //Update the value 
+    this._weight = (pound * 2.2)
+  }
+}
+const myPound = new JoshuaSantosWeight (64);
+
+let tempPound = myPound.pounds;
+console.log(tempPound);
+
+myPound.pounds = 63;
+tempPound = myPound.pounds;
+console.log(tempPound);
+
+// Promise
+const makeServerRequest = new Promise((resolve, reject) => {
+  // responseFromServer is set to true to represent a successful response from a server
+  let responseFromServer = true;
+	
+  if(responseFromServer) {
+    resolve("We got the data");
+  } else {	
+    reject("Data not received");
+  }
+});
+
+makeServerRequest.then(result => {
+  console.log(result);
 });
